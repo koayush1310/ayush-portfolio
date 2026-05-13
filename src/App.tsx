@@ -1,0 +1,219 @@
+export default function PortfolioHome() {
+  const projects = [
+    {
+      title: "Assignment Manager",
+      description:
+        "A full-stack task and assignment management application with authentication and dashboard features.",
+      tech: ["React", "Django", "SQLite"],
+      live: "https://assignment-management-portal.netlify.app/",
+      github: "https://github.com/koayush1310/assignment-manager",
+    },
+    {
+      title: "Student Helper",
+      description:
+        "A student-focused platform for accessing categorized academic resources with an admin panel and responsive interface.",
+      tech: ["React", "JavaScript", "CSS", "Vercel"],
+      live: "https://students-helper.vercel.app/",
+      github: "https://github.com/koayush1310/student-helper",
+    },
+    {
+      title: "Task Manager",
+      description:
+        "A full-stack task management application with authentication and task organization features.",
+      tech: ["React", "Django", "SQLite"],
+      live: "https://ayush-task-manager-dashboard.vercel.app/",
+      github: "https://github.com/koayush1310",
+    },
+  ];
+
+  const skills = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React.js",
+    "Tailwind CSS",
+    "Django",
+    "Git",
+    "GitHub",
+    "Vercel",
+  ];
+
+  return (
+    <div className="min-h-screen bg-black text-white">
+      {/* Navbar */}
+      <nav className="flex items-center justify-between px-8 py-6 border-b border-white/10 sticky top-0 bg-black/80 backdrop-blur z-50">
+        <h1 className="text-2xl font-bold tracking-wide">Ayush Konchada</h1>
+
+        <div className="hidden md:flex gap-8 text-sm text-gray-300">
+          <a href="#about" className="hover:text-white transition">
+            About
+          </a>
+          <a href="#skills" className="hover:text-white transition">
+            Skills
+          </a>
+          <a href="#projects" className="hover:text-white transition">
+            Projects
+          </a>
+          <a href="#contact" className="hover:text-white transition">
+            Contact
+          </a>
+        </div>
+      </nav>
+
+      {/* Hero */}
+      <section className="px-8 md:px-20 py-24 md:py-32">
+        <div className="max-w-5xl mx-auto">
+          <p className="text-blue-400 text-sm mb-4 tracking-widest uppercase">
+            Portfolio
+          </p>
+
+          <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+            Hi, I'm <span className="text-blue-500">Ayush</span>
+          </h1>
+
+          <h2 className="text-2xl md:text-3xl text-gray-300 mt-6 font-medium">
+            B.Tech CSE Student & Full Stack Developer
+          </h2>
+
+          <p className="text-gray-400 text-lg mt-8 max-w-3xl leading-8">
+            I build modern web applications using React, Django, and
+            JavaScript. Passionate about creating practical student-focused
+            platforms and real-world projects.
+          </p>
+
+          <div className="flex flex-wrap gap-4 mt-10">
+            <a href="#projects" className="bg-blue-600 hover:bg-blue-700 transition px-6 py-3 rounded-2xl font-medium shadow-lg">
+              View Projects
+            </a>
+
+            <a href="/resume.pdf" download="Ayush_Konchada_Resume" className="border border-white/20 hover:border-white transition px-6 py-3 rounded-2xl font-medium">
+              Download Resume
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* About */}
+      <section id="about" className="px-8 md:px-20 py-24 border-t border-white/10">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-4xl font-bold mb-10">About Me</h2>
+
+          <div className="bg-white/5 border border-white/10 rounded-3xl p-8 text-gray-300 leading-8 text-lg">
+            I am a B.Tech Computer Science student passionate about web
+            development and creating practical applications.
+            <br />
+            <br />
+            I enjoy working with frontend technologies, APIs, databases, and
+            full-stack development.
+            <br />
+            <br />
+            Currently exploring deployment workflows, scalable applications, and
+            modern UI development.
+          </div>
+        </div>
+      </section>
+
+      {/* Skills */}
+      <section id="skills" className="px-8 md:px-20 py-24 border-t border-white/10">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-4xl font-bold mb-10">Skills</h2>
+
+          <div className="flex flex-wrap gap-4">
+            {skills.map((skill, index) => (
+              <div
+                key={index}
+                className="px-5 py-3 rounded-2xl bg-white/5 border border-white/10 hover:border-blue-500 transition"
+              >
+                {skill}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Projects */}
+      <section
+        id="projects"
+        className="px-8 md:px-20 py-24 border-t border-white/10"
+      >
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold mb-14">Projects</h2>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {projects.map((project, index) => (
+              <div
+                key={index}
+                className="bg-white/5 border border-white/10 rounded-3xl p-7 hover:-translate-y-2 transition duration-300"
+              >
+                <div className="h-44 rounded-2xl bg-gradient-to-br from-blue-500/30 to-purple-500/20 mb-6" />
+
+                <h3 className="text-2xl font-semibold mb-4">
+                  {project.title}
+                </h3>
+
+                <p className="text-gray-400 leading-7 mb-6">
+                  {project.description}
+                </p>
+
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {project.tech.map((item, i) => (
+                    <span
+                      key={i}
+                      className="text-sm px-3 py-1 rounded-full bg-blue-500/10 text-blue-300 border border-blue-500/20"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="flex gap-4">
+                  <a href={project.live} target="_blank" rel="noopener noreferrer" className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-xl text-sm transition">
+                    Live Demo
+                  </a>
+
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="border border-white/20 hover:border-white px-4 py-2 rounded-xl text-sm transition">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section
+        id="contact"
+        className="px-8 md:px-20 py-24 border-t border-white/10"
+      >
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-6">Contact</h2>
+
+          <p className="text-gray-400 text-lg mb-10 leading-8">
+            Interested in collaborating, internships, projects, or technical
+            discussions? Feel free to connect.
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-4">
+            <a href="https://www.linkedin.com/in/ayush-konchada-008721310" target="_blank" className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-2xl transition">
+              LinkedIn
+            </a>
+
+            <a href="https://github.com/koayush1310" target="_blank" className="border border-white/20 hover:border-white px-6 py-3 rounded-2xl transition">
+              GitHub
+            </a>
+
+            <a href="mailto:konchadaayush123@gmail.com" className="border border-white/20 hover:border-white px-6 py-3 rounded-2xl transition">
+              Email
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-white/10 py-8 text-center text-gray-500 text-sm">
+        © 2026 Ayush. Built with React & Tailwind CSS.
+      </footer>
+    </div>
+  );
+}
