@@ -5,6 +5,7 @@ export default function PortfolioHome() {
       description:
         "A full-stack task and assignment management application with authentication and dashboard features.",
       tech: ["React", "Django", "SQLite"],
+      image: "/assignment-manager.png",
       live: "https://assignment-management-portal.netlify.app/",
       github: "https://github.com/koayush1310/assignment-manager",
     },
@@ -13,6 +14,7 @@ export default function PortfolioHome() {
       description:
         "A student-focused platform for accessing categorized academic resources with an admin panel and responsive interface.",
       tech: ["React", "JavaScript", "CSS", "Vercel"],
+      image: "/student-helper.png",
       live: "https://students-helper.vercel.app/",
       github: "https://github.com/koayush1310/student-helper",
     },
@@ -21,6 +23,7 @@ export default function PortfolioHome() {
       description:
         "A full-stack task management application with authentication and task organization features.",
       tech: ["React", "Django", "SQLite"],
+      image: "/task-manager.png",
       live: "https://ayush-task-manager-dashboard.vercel.app/",
       github: "https://github.com/koayush1310",
     },
@@ -145,7 +148,7 @@ export default function PortfolioHome() {
                 key={index}
                 className="bg-white/5 border border-white/10 rounded-3xl p-7 hover:-translate-y-2 transition duration-300"
               >
-                <div className="h-44 rounded-2xl bg-gradient-to-br from-blue-500/30 to-purple-500/20 mb-6" />
+                <img src={project.image} alt={project.title} className="h-44 w-full object-cover rounded-2xl mb-6 hover:scale-105 transition duration-300" />
 
                 <h3 className="text-2xl font-semibold mb-4">
                   {project.title}
