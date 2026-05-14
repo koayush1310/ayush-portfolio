@@ -89,7 +89,7 @@ export default function PortfolioHome() {
               View Projects
             </a>
 
-            <a href="/resume.pdf" download="Ayush_Konchada_Resume" className="border border-white/20 hover:border-white transition px-6 py-3 rounded-2xl font-medium">
+            <a href="/Ayush_Konchada_Resume.pdf" download className="border border-white/20 hover:border-white transition px-6 py-3 rounded-2xl font-medium">
               Download Resume
             </a>
           </div>
