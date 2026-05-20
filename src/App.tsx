@@ -1,3 +1,5 @@
+import {FaLinkedin, FaGithub, FaInstagram, FaXTwitter} from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 export default function PortfolioHome() {
   const projects = [
     {
@@ -161,7 +163,7 @@ export default function PortfolioHome() {
                   </a>
 
                   <a href={project.github} target="_blank" rel="noopener noreferrer" className="border border-white/20 hover:border-white px-4 py-2 rounded-xl text-sm transition">
-                    GitHub
+                    Source Code
                   </a>
                 </div>
               </div>
@@ -183,24 +185,24 @@ export default function PortfolioHome() {
           </p>
 
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="https://www.linkedin.com/in/ayush-konchada-008721310" target="_blank" className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-2xl transition">
-              LinkedIn
+            <a href="https://www.linkedin.com/in/ayush-konchada-008721310" target="_blank" className="flex items-center gap-2 bg-[#0077B5] hover:scale-105 transition px-6 py-3 rounded-2xl font-medium">
+              <FaLinkedin size={20}/>LinkedIn
             </a>
 
-            <a href="https://github.com/koayush1310" target="_blank" className="border border-white/20 hover:border-white px-6 py-3 rounded-2xl transition">
-              GitHub
+            <a href="https://github.com/koayush1310" target="_blank" className="flex items-center gap-2 bg-[#171515] hover:scale-105 transition px-6 py-3 rounded-2xl font-medium border border-white/10">
+              <FaGithub size={20}/>GitHub
             </a>
 
-            <a href="mailto:konchadaayush123@gmail.com" className="border border-white/20 hover:border-white px-6 py-3 rounded-2xl transition">
-              Email
+            <a href="mailto:konchadaayush123@gmail.com" className="flex items-center gap-2 bg-red-600 hover:scale-105 transition px-6 py-3 rounded-2xl font-medium">
+              <MdEmail size={22}/> Email
             </a>
 
-            <a href="https://instagram.com/k.ayush_13" target="_blank" className="border border-white/20 hover:border-white px-6 py-3 rounded-2xl transition">
-              Instagram
+            <a href="https://instagram.com/k.ayush_13" target="_blank" className="flex items-center gap-2 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 hover:scale-105 transition px-6 py-3 rounded-2xl font-medium">
+              <FaInstagram size={20}/>Instagram
             </a>
 
-            <a href="https://x.com/AyushKonch28299" target="_blank" className="border border-white/20 hover:border-white px-6 py-3 rounded-2xl transition">
-              Twitter / X
+            <a href="https://x.com/AyushKonch28299" target="_blank" className="flex items-center gap-2 bg-black hover:scale-105 transition px-6 py-3 rounded-2xl font-medium border border-white/20">
+              <FaXTwitter size={20}/>Twitter / X
             </a>
           </div>
         </div>
