@@ -3,7 +3,7 @@ export default function PortfolioHome() {
     {
       title: "Assignment Manager",
       description:
-        "A full-stack task and assignment management application with authentication and dashboard features.",
+        "A full stack assignment management platform featuring authentication, dashboard functionality, and organized task handling for students and faculty.",
       tech: ["React", "Django", "SQLite"],
       image: "/assignment-manager.png",
       live: "https://assignment-management-portal.netlify.app/",
@@ -12,7 +12,7 @@ export default function PortfolioHome() {
     {
       title: "Student Helper",
       description:
-        "A student-focused platform for accessing categorized academic resources with an admin panel and responsive interface.",
+        "A student-focused resource platform providing categorized academic materials with admin-controlled content management and responsive frontend design.",
       tech: ["React", "JavaScript", "CSS", "Vercel"],
       image: "/student-helper.png",
       live: "https://students-helper.vercel.app/",
@@ -21,7 +21,7 @@ export default function PortfolioHome() {
     {
       title: "Task Manager",
       description:
-        "A full-stack task management application with authentication and task organization features.",
+        "A full stack task management application with secure authentication, CRUD operations, and organized workflow management features.",
       tech: ["React", "Django", "SQLite"],
       image: "/task-manager.png",
       live: "https://ayush-task-manager-dashboard.vercel.app/",
@@ -35,7 +35,10 @@ export default function PortfolioHome() {
     "JavaScript",
     "React.js",
     "Tailwind CSS",
-    "Django",
+    "Node.js",
+    "Express.js",
+    "MongoDb",
+    "PostgreSQL",
     "Git",
     "GitHub",
     "Vercel",
@@ -75,13 +78,12 @@ export default function PortfolioHome() {
           </h1>
 
           <h2 className="text-2xl md:text-3xl text-gray-300 mt-6 font-medium">
-            B.Tech CSE Student & Full Stack Developer
+            Full Stack Developer | AI-Powered Web Applications
           </h2>
 
           <p className="text-gray-400 text-lg mt-8 max-w-3xl leading-8">
-            I build modern web applications using React, Django, and
-            JavaScript. Passionate about creating practical student-focused
-            platforms and real-world projects.
+            I build modern full stack web applications using React, Node.js, and scalable backend technologies.
+            Passionate about creating practical products and exploring AI-powered solutions for real-world problems.
           </p>
 
           <div className="flex flex-wrap gap-4 mt-10">
@@ -102,16 +104,8 @@ export default function PortfolioHome() {
           <h2 className="text-4xl font-bold mb-10">About Me</h2>
 
           <div className="bg-white/5 border border-white/10 rounded-3xl p-8 text-gray-300 leading-8 text-lg">
-            I am a B.Tech Computer Science student passionate about web
-            development and creating practical applications.
-            <br />
-            <br />
-            I enjoy working with frontend technologies, APIs, databases, and
-            full-stack development.
-            <br />
-            <br />
-            Currently exploring deployment workflows, scalable applications, and
-            modern UI development.
+            I am a Computer Science and Engineering student focused on full stack development and modern backend technologies. I enjoy building scalable web applications, working with APIs, databases, and creating practical solutions through clean and efficient development.
+            Currently, I am expanding my skills in backend architecture, PostgreSQL, deployment workflows, and AI-powered application development.
           </div>
         </div>
       </section>
@@ -193,8 +187,7 @@ export default function PortfolioHome() {
           <h2 className="text-4xl font-bold mb-6">Contact</h2>
 
           <p className="text-gray-400 text-lg mb-10 leading-8">
-            Interested in collaborating, internships, projects, or technical
-            discussions? Feel free to connect.
+            Open to internships, collaborative projects, and opportunities related to full stack development and modern web technologies.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4">
