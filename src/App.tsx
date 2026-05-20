@@ -1,6 +1,9 @@
+import { useState } from "react";
 import {FaLinkedin, FaGithub, FaInstagram, FaXTwitter} from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import { HiMenu, HiX } from "react-icons/hi";
 export default function PortfolioHome() {
+  const [menuOpen, setMenuOpen] = useState(false);
   const projects = [
     {
       title: "Assignment Manager",
@@ -46,24 +49,85 @@ export default function PortfolioHome() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Navbar */}
-      <nav className="flex items-center justify-between px-8 py-6 border-b border-white/10 sticky top-0 bg-black/80 backdrop-blur z-50 hover:text-blue-400">
-        <h1 className="text-2xl font-bold tracking-wide">Ayush Konchada</h1>
+<nav className="sticky top-0 bg-black/80 backdrop-blur z-50 border-b border-white/10">
 
-        <div className="flex gap-4 md:gap-8 text-xs md:text-sm text-gray-300 flex-wrap">
-          <a href="#about" className="hover:text-white transition">
-            About
-          </a>
-          <a href="#skills" className="hover:text-white transition">
-            Skills
-          </a>
-          <a href="#projects" className="hover:text-white transition">
-            Projects
-          </a>
-          <a href="#contact" className="hover:text-white transition">
-            Contact
-          </a>
-        </div>
-      </nav>
+  <div className="flex items-center justify-between px-6 md:px-8 py-5">
+
+    <h1 className="text-2xl font-bold tracking-wide">
+      Ayush Konchada
+    </h1>
+
+    {/* Desktop Menu */}
+    <div className="hidden md:flex gap-8 text-sm text-gray-300">
+
+      <a href="#about" className="hover:text-blue-400 transition">
+        About
+      </a>
+
+      <a href="#skills" className="hover:text-blue-400 transition">
+        Skills
+      </a>
+
+      <a href="#projects" className="hover:text-blue-400 transition">
+        Projects
+      </a>
+
+      <a href="#contact" className="hover:text-blue-400 transition">
+        Contact
+      </a>
+
+    </div>
+
+    {/* Mobile Menu Button */}
+    <button
+      className="md:hidden text-white"
+      onClick={() => setMenuOpen(!menuOpen)}
+    >
+      {menuOpen ? <HiX size={28} /> : <HiMenu size={28} />}
+    </button>
+
+  </div>
+
+  {/* Mobile Dropdown */}
+  {menuOpen && (
+    <div className="md:hidden flex flex-col px-6 pb-6 gap-4 text-gray-300 bg-black border-t border-white/10">
+
+      <a
+        href="#about"
+        className="hover:text-blue-400 transition"
+        onClick={() => setMenuOpen(false)}
+      >
+        About
+      </a>
+
+      <a
+        href="#skills"
+        className="hover:text-blue-400 transition"
+        onClick={() => setMenuOpen(false)}
+      >
+        Skills
+      </a>
+
+      <a
+        href="#projects"
+        className="hover:text-blue-400 transition"
+        onClick={() => setMenuOpen(false)}
+      >
+        Projects
+      </a>
+
+      <a
+        href="#contact"
+        className="hover:text-blue-400 transition"
+        onClick={() => setMenuOpen(false)}
+      >
+        Contact
+      </a>
+
+    </div>
+  )}
+
+</nav>
 
       {/* Hero */}
       <section className="px-8 md:px-20 py-24 md:py-32">
