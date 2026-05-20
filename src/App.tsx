@@ -48,19 +48,15 @@ export default function PortfolioHome() {
 
   return (
     <div className="min-h-screen bg-black text-white">
-
       {/* Navbar */}
       <nav className="sticky top-0 bg-black/80 backdrop-blur z-50 border-b border-white/10">
-
         <div className="flex items-center justify-between px-6 md:px-8 py-5">
-
           <h1 className="text-2xl font-bold tracking-wide">
             Ayush Konchada
           </h1>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-8 text-sm text-gray-300">
-            
             <a href="#about" className="hover:text-blue-400 transition">
               About
             </a>
@@ -76,21 +72,17 @@ export default function PortfolioHome() {
             <a href="#contact" className="hover:text-blue-400 transition">
               Contact
             </a>
-
           </div>
           
           {/* Mobile Menu Button */}
-    
           <button className="md:hidden text-white" onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <HiX size={28} /> : <HiMenu size={28} />}
           </button>
-
         </div>
 
         {/* Mobile Dropdown */}
         {menuOpen && (
         <div className="md:hidden flex flex-col px-6 pb-6 gap-4 text-gray-300 bg-black border-t border-white/10">
-          
           <a href="#about" className="hover:text-blue-400 transition" onClick={() => setMenuOpen(false)}>
             About
           </a>
@@ -106,10 +98,8 @@ export default function PortfolioHome() {
           <a href="#contact" className="hover:text-blue-400 transition" onClick={() => setMenuOpen(false)}>
             Contact
           </a>
-
         </div>
         )}
-
       </nav>
 
       {/* Hero */}
