@@ -4,7 +4,7 @@ export default function PortfolioHome() {
       title: "Assignment Manager",
       description:
         "A full stack assignment management platform featuring authentication, dashboard functionality, and organized task handling for students and faculty.",
-      tech: ["React", "Django", "SQLite"],
+      tech: ["React", "CSS", "Supabase"],
       image: "/assignment-manager.png",
       live: "https://assignment-management-portal.netlify.app/",
       github: "https://github.com/koayush1310/assignment-manager",
@@ -13,7 +13,7 @@ export default function PortfolioHome() {
       title: "Student Helper",
       description:
         "A student-focused resource platform providing categorized academic materials with admin-controlled content management and responsive frontend design.",
-      tech: ["React", "JavaScript", "CSS", "Vercel"],
+      tech: ["React","CSS", "Supabase"],
       image: "/student-helper.png",
       live: "https://students-helper.vercel.app/",
       github: "https://github.com/koayush1310/student-helper",
@@ -22,7 +22,7 @@ export default function PortfolioHome() {
       title: "Task Manager",
       description:
         "A full stack task management application with secure authentication, CRUD operations, and organized workflow management features.",
-      tech: ["React", "Django", "SQLite"],
+      tech: ["React","Tailwind CSS", "Django", "SQLite"],
       image: "/task-manager.png",
       live: "https://ayush-task-manager-dashboard.vercel.app/",
       github: "https://github.com/koayush1310",
@@ -39,9 +39,6 @@ export default function PortfolioHome() {
     "Express.js",
     "MongoDb",
     "PostgreSQL",
-    "Git",
-    "GitHub",
-    "Vercel",
   ];
 
   return (
@@ -80,11 +77,6 @@ export default function PortfolioHome() {
           <h2 className="text-2xl md:text-3xl text-gray-300 mt-6 font-medium">
             Full Stack Developer | AI-Powered Web Applications
           </h2>
-
-          <p className="text-gray-400 text-lg mt-8 max-w-3xl leading-8">
-            I build modern full stack web applications using React, Node.js, and scalable backend technologies.
-            Passionate about creating practical products and exploring AI-powered solutions for real-world problems.
-          </p>
 
           <div className="flex flex-wrap gap-4 mt-10">
             <a href="#projects" className="bg-blue-600 hover:bg-blue-700 transition px-6 py-3 rounded-2xl font-medium shadow-lg">
@@ -201,6 +193,14 @@ export default function PortfolioHome() {
 
             <a href="mailto:konchadaayush123@gmail.com" className="border border-white/20 hover:border-white px-6 py-3 rounded-2xl transition">
               Email
+            </a>
+
+            <a href="https://instagram.com/k.ayush_13" target="_blank" className="border border-white/20 hover:border-white px-6 py-3 rounded-2xl transition">
+              Instagram
+            </a>
+
+            <a href="https://x.com/AyushKonch28299" target="_blank" className="border border-white/20 hover:border-white px-6 py-3 rounded-2xl transition">
+              Twitter / X
             </a>
           </div>
         </div>
