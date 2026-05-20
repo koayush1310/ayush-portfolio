@@ -46,10 +46,10 @@ export default function PortfolioHome() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Navbar */}
-      <nav className="flex items-center justify-between px-8 py-6 border-b border-white/10 sticky top-0 bg-black/80 backdrop-blur z-50">
+      <nav className="flex items-center justify-between px-8 py-6 border-b border-white/10 sticky top-0 bg-black/80 backdrop-blur z-50 hover:text-blue-400">
         <h1 className="text-2xl font-bold tracking-wide">Ayush Konchada</h1>
 
-        <div className="hidden md:flex gap-8 text-sm text-gray-300">
+        <div className="flex gap-4 md:gap-8 text-xs md:text-sm text-gray-300 flex-wrap">
           <a href="#about" className="hover:text-white transition">
             About
           </a>
