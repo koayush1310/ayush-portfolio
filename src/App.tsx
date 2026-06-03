@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {FaLinkedin, FaGithub, FaInstagram, FaXTwitter} from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { HiMenu, HiX } from "react-icons/hi";
@@ -45,6 +45,10 @@ export default function PortfolioHome() {
     "MongoDb",
     "PostgreSQL",
   ];
+
+  useEffect(()=> {
+    document.title = "Ayush Portfolio";
+  }, []);
 
   return (
     <div className="min-h-screen bg-black text-white">
