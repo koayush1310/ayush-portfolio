@@ -46,10 +46,6 @@ export default function PortfolioHome() {
     "PostgreSQL",
   ];
 
-  useEffect(()=> {
-    document.title = "Ayush Portfolio";
-  }, []);
-
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Navbar */}
