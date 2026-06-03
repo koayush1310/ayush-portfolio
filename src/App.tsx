@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import {FaLinkedin, FaGithub, FaInstagram, FaXTwitter} from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { HiMenu, HiX } from "react-icons/hi";
