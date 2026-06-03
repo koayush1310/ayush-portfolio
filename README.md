@@ -1,73 +1,286 @@
-# React + TypeScript + Vite
+# 🚀 Ayush Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and interactive portfolio website showcasing my projects, skills, and experience as a Full Stack Developer.
 
-Currently, two official plugins are available:
+🌐 **Live Website:** https://konchada-ayush-portfolio.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📸 Preview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Home
 
-## Expanding the ESLint configuration
+![Home Page](./public/screenshots/home.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### About
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+![About Section](./public/screenshots/about.png)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Skills
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+![Skills Section](./public/screenshots/skills.png)
+
+### Projects
+
+![Projects Section](./public/screenshots/projects.png)
+
+### Contact
+
+![Contact Section](./public/screenshots/contact.png)
+
+---
+
+## ✨ Features
+
+* Modern Dark Theme UI
+* Fully Responsive Design
+* Mobile Navigation Menu
+* Smooth Scrolling Navigation
+* Project Showcase
+* Resume Download
+* Social Media Integration
+* Live Demo Links
+* GitHub Repository Links
+* Professional Contact Section
+* Fast Loading Performance
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React
+* TypeScript
+* Tailwind CSS
+* Vite
+
+### Deployment
+
+* Vercel
+
+### Icons
+
+* React Icons
+
+### Version Control
+
+* Git
+* GitHub
+
+---
+
+## 📂 Folder Structure
+
+```text
+portfolio/
+│
+├── public/
+│   ├── assignment-manager.png
+│   ├── student-helper.png
+│   ├── task-manager.png
+│   ├── Ayush_Konchada_Resume.pdf
+│   ├── favicon.svg
+│   │
+│   └── screenshots/
+│       ├── home.png
+│       ├── about.png
+│       ├── skills.png
+│       ├── projects.png
+│       └── contact.png
+│
+├── src/
+│   ├── assets/
+│   ├── App.tsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.tsx
+│
+├── .gitignore
+├── package.json
+├── package-lock.json
+├── tsconfig.json
+├── tsconfig.app.json
+├── tsconfig.node.json
+├── vite.config.ts
+└── README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Featured Projects
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 📋 Assignment Manager
+
+A full-stack assignment management platform featuring authentication, dashboard functionality, and organized task handling for students and faculty.
+
+#### Technologies Used
+
+* React
+* CSS
+* Supabase
+
+#### Features
+
+* User Authentication
+* Dashboard Interface
+* Assignment Tracking
+* Responsive Design
+
+---
+
+### 🎓 Student Helper
+
+A student-focused platform providing categorized academic resources with admin-controlled content management.
+
+#### Technologies Used
+
+* React
+* CSS
+* Supabase
+
+#### Features
+
+* Categorized Resources
+* Admin Panel
+* Responsive UI
+* Easy Navigation
+
+---
+
+### ✅ Task Manager
+
+A task management application with authentication and CRUD operations for efficient workflow management.
+
+#### Technologies Used
+
+* React
+* Tailwind CSS
+* Django
+* SQLite
+
+#### Features
+
+* Authentication
+* Create Tasks
+* Update Tasks
+* Delete Tasks
+* Responsive Design
+
+---
+
+## 🧑‍💻 About Me
+
+I am a Computer Science and Engineering student focused on Full Stack Development and modern backend technologies.
+
+I enjoy building scalable web applications, working with APIs, databases, deployment workflows, and exploring AI-powered web solutions.
+
+---
+
+## 📧 Contact
+
+### LinkedIn
+
+https://www.linkedin.com/in/ayush-konchada-008721310
+
+### GitHub
+
+https://github.com/koayush1310
+
+### Email
+
+mailto:konchadaayush123@gmail.com
+
+### Instagram
+
+https://instagram.com/k.ayush_13
+
+### Twitter / X
+
+https://x.com/AyushKonch28299
+
+---
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/koayush1310/ayush-portfolio.git
 ```
+
+Move into the project folder:
+
+```bash
+cd ayush-portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## 🏗️ Build For Production
+
+```bash
+npm run build
+```
+
+Preview production build:
+
+```bash
+npm run preview
+```
+
+---
+
+## 🌐 Deployment
+
+This project is deployed using Vercel.
+
+### Deployment Steps
+
+1. Push code to GitHub
+2. Import repository into Vercel
+3. Configure project settings (if needed)
+4. Deploy
+5. Get live URL
+
+---
+
+## 📈 Future Improvements
+
+* Framer Motion Animations
+* Blog Section
+* Experience Timeline
+* Skills Progress Indicators
+* GitHub Statistics
+* Project Filtering
+* Light/Dark Theme Toggle
+* Project Search Functionality
+* Contact Form Integration
+
+---
+
+## 📄 Resume
+
+Resume can be downloaded directly from the portfolio website using the **Download Resume** button.
+
+---
+
+## © License
+
+This project is open-source and available under the MIT License.
+
+---
+
+### Built with ❤️ by Ayush Konchada
